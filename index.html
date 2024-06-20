@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 4px;
+        padding: 0%;
+        background-image: url("img/pexels-olly-3757954.jpg");
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 34px;
+    }
+
+
+    .mid {
+        border: 2px solid rgb(24, 73, 94);
+        display: block;
+        width: 33%;
+        margin: 34px auto;
+        background-color: rgb(24, 73, 94);
+        border-radius: 12px;
+
+
+    }
+
+    .right {
+        /* border: 3px solid rgb(39, 61, 109); */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 34px;
+        background-color: rgb(125, 127, 128);
+        border-radius: 10px;
+        padding: 7px;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        margin: 7px;
+        padding: 5px;
+        color: rgb(252, 252, 248);
+        text-decoration: none;
+        font-size: 20 px;
+        background-color: rgb(97, 150, 180);
+        border-radius: 4px;
+    }
+
+    .navbar li a:hover {
+        background-color: rgb(156, 223, 225);
+        color: rgb(9, 17, 50);
+    }
+
+    .left img {
+        width: 127px;
+        height: 96px;
+        border-radius: 40px;
+    }
+
+    .left p {
+        font: bolder;
+        font-weight: 900;
+    }
+
+    .btn {
+        margin: 1px;
+        padding: 3px;
+        background-color: rgb(57, 45, 49);
+        color: aquamarine;
+        border-radius: 4px;
+        border: 1px solid rgb(63, 47, 51);
+
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: rgb(10, 81, 37);
+        color: rgb(185, 221, 236);
+    }
+
+    .container {
+        width: 35%;
+        height: 66%;
+        /* border: 3px solid black; */
+        margin: 110px 92px;
+        padding: 20px 10px;
+        border: 5px solid rgb(190, 167, 140);
+        border-radius: 4px;
+        background-color: rgb(203, 189, 173);
+    }
+
+    div.box {
+        padding: 0px;
+        margin: -16px;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .box input {
+        padding: 4px 59px;
+        text-align: center;
+        display: block;
+        width: 301px;
+        margin: 3px auto;
+        background-color: rgb(84, 74, 74);
+        border-radius: 4px;
+        color: aqua;
+        height: 34px;
+
+    }
+
+    select #myslot {
+        margin: 23px;
+    }
+
+    .sllot {
+        margin: 12px;
+    }
+
+    select {
+        margin: 27px;
+        width: 136px;
+    }
+
+    label {
+        margin: 12px;
+    }
+
+    .box1 {
+        margin: -5px 204px;
+    }
+
+    .btn1 {
+        display: block;
+        margin: 12px auto;
+        padding: 4px 4px;
+        border-radius: 4px;
+        width: 417px;
+        height: 41px;
+        background-color: rgb(84, 74, 74);
+        color: aquamarine;
+    }
+
+    .btn1:hover {
+        cursor: pointer;
+        background-color: rgb(69, 55, 60);
+        font-size: 14px;
+    }
+
+    .left img:hover {
+        cursor: pointer;
+        size: 2dvi;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/dumbelimage.jpg" alt="">
+            <div class="p">POwer POint GYM</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Fitness calculator</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Email us</button>
+            <button class="btn">Call us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3 id="head">Register yourself</h3>
+        <form action="noaction.php">
+            <div class="box">
+                <label for="name">
+                    <input type="text" id="name" placeholder="Enter ypur Name">
+                </label><br>
+            </div>
+            <div class="box">
+                <label for="city">
+                    <input type="text" id="city" placeholder="Enter your city">
+                </label><br>
+            </div>
+            <div class="box">
+                <label for="age">
+                    <input type="number" id="age" placeholder="Enter your Age">
+                </label>
+            </div>
+            <div class="box">
+                <label for="age">
+                    <input type="number" id="age" placeholder="Enter your Contact No.">
+                </label>
+            </div>
+            <button class="btn1">Submit</button>
+            <button class="btn1">Reset</button>
+        </form>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
